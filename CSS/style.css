@@ -1,0 +1,260 @@
+:root{
+    --Dark-Blue1: hsl(217, 28%, 15%);
+    --Dark-Blue2: hsl(218, 28%, 13%);
+    --Dark-Blue3: hsl(216, 53%, 9%);
+    --Dark-Blue4: hsl(219, 30%, 18%);
+    --Cyan: hsl(176, 68%, 64%);
+    --Blue: hsl(198, 60%, 50%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --White: hsl(0, 0%, 100%);
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: var(--Dark-Blue2);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+}
+@media (max-width:400px){
+    .nav{
+        
+    }
+}
+.logo{
+    flex: 1;
+
+}
+.links{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+.links a{
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 100;
+}
+.links a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    margin-bottom: 100px;
+}
+.img-box{
+width: 50%;
+}
+.img-box img{
+    width: 100%;
+}
+.txt h2{
+    text-align: center;
+}
+.txt1 p{
+    text-align: center;
+}
+.btn input{
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 0px 30px;
+    background-color: var(--Blue);
+    color: var(--White);
+    border: 0px ;
+}
+.btn input:hover{
+    background-color: var(--Cyan);
+    cursor: pointer;
+}
+.main2{
+    width: 55%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    color: var(--White);
+    margin-bottom: 100px;
+}
+
+.opo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.opo p{
+    text-align: center;
+}
+.main3{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--White);
+}
+.sub h2{
+    font-size: 50px;
+}
+.sub p{
+    font-size: 15px;
+    text-align: justify;
+}
+.bottom a{
+    text-decoration: underline;
+    color: var(--Cyan);
+}
+.bottom a:hover{
+    color: var(--White);
+    cursor: pointer;
+}
+.main4{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    color: var(--White);
+    gap: 15px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.comma{
+    position: absolute;
+    top: -30px;
+    left: -10px;
+
+}
+.base{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    background-color: var(--Dark-Blue4);
+    /* justify-content: space-between; */
+    z-index: 2;
+}
+.base-txt p{
+font-size: 20px;
+font-weight: 400;
+text-align: justify;
+}
+.profile{
+    display: flex;
+    gap: 10px;
+}
+.profile img{
+    border-radius: 50%;
+    height: 50%;
+}
+.main5{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    color: var(--White);
+    background-color: var(--Dark-Blue1);
+    padding: 40px 80px;
+    border-radius: 5px;
+    position: relative;
+    bottom: -70px;
+    
+}
+.main5 h2{
+    font-size: 40px;
+}
+.main5 p{
+    font-size: 20px;
+}
+.main5 input{
+    border-radius: 20px;
+}
+#mail{
+height: 30px;
+width: 60%;
+}
+#mail::placeholder{
+    padding-left: 15px;
+}
+#click{
+background-color: var(--Blue);
+width: 25%;
+margin-left: 20px;
+height: 30px;
+}
+#click:hover{
+    background-color: var(--Cyan);
+    cursor: pointer;
+}
+
+    /* Styling for footer */
+
+.footer{
+    z-index: -2;
+    /* position: absolute; */
+    margin-left: -10px;
+    background-color: var(--Dark-Blue3) ;
+    color: var(--White);
+    padding: 100px 70px;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr 2fr ;
+    
+
+
+}
+.footer-box1{
+
+}
+.footer-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.mini-footer1{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    width: 80%;
+
+}
+.mini-footer2{
+    display: flex;
+    gap: 15px;
+
+}
+.footer-box3 a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--White);
+    margin-bottom: 15px;
+}
+.footer-box4 a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--White);
+    margin-bottom: 15px;
+}
